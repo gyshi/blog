@@ -6,7 +6,7 @@
 
   某些操作受内存带宽限制，这意味着内存带宽决定了此类操作所花费的时间。以bfloat16格式存储内存带宽受限操作的输入和输出可减少必须传输的数据量，从而提高了操作速度。格式是32位[IEEE 754单精度浮点格式](https://en.wikipedia.org/wiki/Single-precision_floating-point_format)（binary32）的截断（16位）版本，旨在[加速](https://en.wikipedia.org/wiki/Hardware_acceleration)[机器学习](https://en.wikipedia.org/wiki/Machine_learning)和[近传感器计算](https://en.wikipedia.org/wiki/Intelligent_sensor)的bfloat16格式，作为一个截短的[IEEE 754单精度](https://en.wikipedia.org/wiki/Single-precision_floating-point_format) 32位浮点，允许快速[转换](https://en.wikipedia.org/wiki/Type_conversion)到和从IEEE 754单精度32位浮点。
 
-![bfloat16](C:\Users\shiguang\shiguangyong blog\日常博客总结\img\bfloat16.png)
+![bfloat16.png](https://github.com/gyshi/blog/blob/master/tensorflow-study/img/bfloat16.png?raw=true)
 
 > Tensorflow  [bfloat16](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/core/framework/bfloat16.h)代码实现:
 >
